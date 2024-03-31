@@ -10,7 +10,7 @@ const inputTypes = {
 };
 
 const Input = ({
-  type = '',
+  type = 'text',
   onChange,
   isCopyable,
   value,
@@ -33,13 +33,7 @@ const Input = ({
     <div className={`${styles.input} ${inputTypes.PHONE === type ? styles.phone : ''}`}>
       {type === inputTypes.SEARCH && <Icon name="search" className={styles.icon} size={20} />}
       {type === inputTypes.PHONE && <div className={styles.prefix}>+91</div>}
-      <input
-        type={type === inputTypes.PASSWORD && eye ? 'password' : 'text'}
-        name={name}
-        onChange={onChange}
-        placeholder={placeholder}
-        {...rest}
-      />
+      <input type={type} name={name} onChange={onChange} placeholder={placeholder} {...rest} />
       {type === 'password' && eye && (
         <Tooltip value="show" position="right">
           <Icon

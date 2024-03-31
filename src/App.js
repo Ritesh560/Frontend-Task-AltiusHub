@@ -1,11 +1,14 @@
 import styles from './App.module.scss';
 import RoleRoutes from './rbac/RoleRoutes';
+import { InvoiceProvider } from './context/InvoiceContext';
 
 function App() {
   return (
-    <div className={styles.app}>
-      <RoleRoutes />
-    </div>
+    <InvoiceProvider>
+      <div className={styles.app}>
+        <RoleRoutes />
+      </div>
+    </InvoiceProvider>
   );
 }
 
