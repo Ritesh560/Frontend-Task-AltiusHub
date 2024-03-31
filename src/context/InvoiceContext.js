@@ -28,10 +28,12 @@ export const InvoiceProvider = ({ children }) => {
   const updateInvoice = (updatedInvoice, id) => {
     let data = invoices.map((item, idx) => {
       if (item.id === id) {
-        item = updateInvoice;
+        item = { ...item, ...updatedInvoice };
       }
+      return item;
     });
     setInvoices(data);
+    console.log(data);
     navigate('/invoices');
   };
 

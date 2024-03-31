@@ -334,7 +334,7 @@ const InvoiceForm = () => {
                   if (Number(id) === 0) {
                     addInvoice(values);
                   } else {
-                    updateInvoice(values, id);
+                    updateInvoice(values, Number(id));
                   }
                 }}>
                 <span class="relative">Save</span>
