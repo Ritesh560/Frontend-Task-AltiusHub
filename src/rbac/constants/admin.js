@@ -14,7 +14,7 @@ const ADMIN_ROUTES = [
     component: <Invoices />
   },
   {
-    link: '/invoicedetailcomponent',
+    link: '/invoicedetailcomponent/:id',
     name: 'Invoice Details',
     component: <InvoiceForm />
   }

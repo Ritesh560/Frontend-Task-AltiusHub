@@ -7,13 +7,11 @@ function Invoices() {
 
   return (
     <div className="w-[100%] h-[100%]">
-      <div className="flex">
-        <h1 className="w-[100%] flex items-center justify-center mt-4 text-xl font-bold">
-          Invoices
-        </h1>
+      <div className="flex mt-4">
+        <h1 className="w-[100%] flex items-center justify-center  text-xl font-bold">Invoices</h1>
         <button
-          className=" w-[100px] h-[30px] mr-auto p-4 font-bold cursor-pointer border border-gray-500"
-          onClick={() => navigate('/invoicedetailcomponent')}>
+          className=" w-[100px] h-[30px] mr-[20px]  font-bold cursor-pointer bg-blue-500 text-white rounded-lg"
+          onClick={() => navigate('/invoicedetailcomponent/0')}>
           Add +
         </button>
       </div>
@@ -30,7 +28,7 @@ function Invoices() {
           <tbody>
             {DUMMY_DATA.map((item) => (
               <tr
-                onClick={() => navigate('/invoicedetailcomponent')}
+                onClick={() => navigate(`/invoicedetailcomponent/${item.Id}`)}
                 className="bg-white border-b  dark:border-gray-700 cursor-pointer hover:bg-slate-300">
                 {DUMMY_COLUMNS.map((col) => (
                   <td className="px-6 py-4">{item?.[col]}</td>

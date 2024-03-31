@@ -1,12 +1,12 @@
 import React, { createContext, useState, useContext } from 'react';
-
+import { DUMMY_DATA } from '../pages/Invoices/constants';
 const InvoiceContext = createContext();
 
 export const InvoiceProvider = ({ children }) => {
-  const [invoices, setInvoices] = useState([]);
+  const [invoices, setInvoices] = useState(DUMMY_DATA);
 
   const addInvoice = (newInvoice) => {
-    setInvoices([...invoices, newInvoice]);
+    setInvoices([...invoices, { id: invoices.length, ...newInvoice }]);
   };
 
   const removeInvoice = (index) => {
