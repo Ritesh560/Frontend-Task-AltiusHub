@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 import { DUMMY_DATA } from '../pages/Invoices/constants';
 import { useNavigate } from 'react-router-dom';
 const InvoiceContext = createContext();
@@ -10,7 +10,7 @@ export const InvoiceProvider = ({ children }) => {
   const addInvoice = (newInvoice) => {
     newInvoice.id = invoices[invoices.length - 1].id + 1;
     setInvoices([...invoices, newInvoice]);
-    // navigate('/invoices');
+    navigate('/invoices');
   };
 
   const removeInvoice = (index) => {

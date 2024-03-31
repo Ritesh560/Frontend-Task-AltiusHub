@@ -97,11 +97,11 @@ const InvoiceForm = () => {
         {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
           <Form
             onSubmit={handleSubmit}
-            className="w-[40%] min-w-[300px] flex flex-col gap-4  bg-slate-200 p-4 rounded-xl ">
+            className="w-[40%] min-w-[400px] flex flex-col gap-4  bg-slate-200 p-4 rounded-xl ">
             <label htmlFor="items">Invoice Number</label>
             <Input
               type="number"
-              name="InvoiceNumber"
+              name="invoiceNumber"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.invoiceNumber}
@@ -112,7 +112,7 @@ const InvoiceForm = () => {
             <label htmlFor="items">Customer Number</label>
             <Input
               type="text"
-              name="CustomerName"
+              name="customerName"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.customerName}
@@ -124,7 +124,7 @@ const InvoiceForm = () => {
             <label htmlFor="items">Billing Address</label>
             <Input
               type="text"
-              name="BillingAddress"
+              name="billingAddress"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.billingAddress}
@@ -135,7 +135,7 @@ const InvoiceForm = () => {
             <label htmlFor="items">Shipping Address</label>
             <Input
               type="text"
-              name="ShippingAddress"
+              name="shippingAddress"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.shippingAddress}
@@ -157,7 +157,7 @@ const InvoiceForm = () => {
             <label htmlFor="items">Total Amount</label>
             <Input
               type="number"
-              name="TotalAmount"
+              name="totalAmount"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.totalAmount}
@@ -168,8 +168,7 @@ const InvoiceForm = () => {
             <label htmlFor="items">Date</label>
             <Input
               type="date"
-              name="Date"
-              a
+              name="date"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.date}

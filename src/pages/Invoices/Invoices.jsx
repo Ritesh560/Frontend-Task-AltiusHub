@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import { DUMMY_COLUMNS, DUMMY_DATA } from './constants';
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../Home/components/Navbar/Navbar';
+import { useInvoice } from '../../context/InvoiceContext';
+// import Navbar from '../Home/components/Navbar/Navbar';
 
 function Invoices() {
   const navigate = useNavigate();
+  const { addInvoice, removeInvoice, invoices, updateInvoice } = useInvoice();
 
   return (
     <div className="w-[100%] h-[100%]">
@@ -27,7 +29,7 @@ function Invoices() {
             </tr>
           </thead>
           <tbody>
-            {DUMMY_DATA.map((item) => (
+            {invoices.map((item) => (
               <tr
                 onClick={() => navigate(`/invoicedetailcomponent/${item.id}`)}
                 className="bg-white border-b  dark:border-gray-700 cursor-pointer hover:bg-slate-300">
