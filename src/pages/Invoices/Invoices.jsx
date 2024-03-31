@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
 import { DUMMY_COLUMNS, DUMMY_DATA } from './constants';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../Home/components/Navbar/Navbar';
 
 function Invoices() {
   const navigate = useNavigate();
 
   return (
     <div className="w-[100%] h-[100%]">
-      <div className="flex mt-4">
-        <h1 className="w-[100%] flex items-center justify-center  text-xl font-bold">Invoices</h1>
+      <div className="flex justify-between mt-4 px-4">
+        <h1 className=" text-xl font-bold">Invoices</h1>
         <button
-          className=" w-[100px] h-[30px] mr-[20px]  font-bold cursor-pointer bg-blue-500 text-white rounded-lg"
+          className="w-[100px] h-[30px]   font-bold cursor-pointer bg-blue-500 text-white rounded-lg"
           onClick={() => navigate('/invoicedetailcomponent/0')}>
           Add +
         </button>
@@ -28,7 +29,7 @@ function Invoices() {
           <tbody>
             {DUMMY_DATA.map((item) => (
               <tr
-                onClick={() => navigate(`/invoicedetailcomponent/${item.Id}`)}
+                onClick={() => navigate(`/invoicedetailcomponent/${item.id}`)}
                 className="bg-white border-b  dark:border-gray-700 cursor-pointer hover:bg-slate-300">
                 {DUMMY_COLUMNS.map((col) => (
                   <td className="px-6 py-4">{item?.[col]}</td>

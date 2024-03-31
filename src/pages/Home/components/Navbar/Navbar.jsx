@@ -32,9 +32,9 @@ function Navbar() {
           </svg>
         </button>
       </nav>
-      <div className="w-[300px] h-[90%] relative">
+      <div className="w-[300px] h-[90%]  relative">
         <div
-          className={`w-[100%] h-[100%] rounded-lg shadow-stone-700 bg-slate-50 border mt-3 p-5 transition-all absolute ${
+          className={`w-[100%] h-[100%] min-h-[90vh] rounded-lg shadow-stone-700 bg-slate-50 border mt-3 p-5 transition-all absolute z-10 ${
             isSidebarOpen ? 'left-0' : 'left-[-400px]'
           }`}>
           <div
