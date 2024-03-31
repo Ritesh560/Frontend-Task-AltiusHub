@@ -8,7 +8,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -20,7 +20,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -32,7 +32,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -44,7 +44,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -56,7 +56,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -68,7 +68,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -80,7 +80,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -92,7 +92,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -104,7 +104,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   },
   {
@@ -116,7 +116,7 @@ export const DUMMY_DATA = [
     shippingAddress: 'Abc Road Delhi',
     GSTIN: '203904',
     items: ['item1', 'item2'],
-    billSundrys: ['billSundry1', 'billSundry2'],
+    BillSundrys: ['billSundry1', 'billSundry2'],
     totalAmount: 500
   }
 ];

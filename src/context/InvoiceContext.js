@@ -14,15 +14,8 @@ export const InvoiceProvider = ({ children }) => {
   };
 
   const removeInvoice = (index) => {
-    const updatedInvoices = [...invoices];
-    let to_d = 0;
-    updatedInvoices.forEach((item, idx) => {
-      if (item.id === index) {
-        to_d = idx;
-      }
-    });
-    updatedInvoices.splice(to_d, 1);
-    setInvoices(updatedInvoices);
+    setInvoices((prev) => prev.filter((item) => item.id !== index));
+    navigate('/invoices');
   };
 
   const updateInvoice = (updatedInvoice, id) => {
