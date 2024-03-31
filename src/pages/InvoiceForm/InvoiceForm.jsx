@@ -230,8 +230,23 @@ const InvoiceForm = () => {
                 </div>
               )}
             </FieldArray>
-            <button className="rounded-sm bg-blue-200" type="submit" disabled={isSubmitting}>
-              Submit
+            <button
+              class="btn-default overflow-hidden relative w-auto bg-red-50 text-gray-900 py-4 px-4 rounded-xl font-bold uppercase transition-all duration-100 -- hover:shadow-md border border-red-100 hover:bg-gradient-to-t hover:from-red-100 before:to-red-50 hover:-translate-y-[3px] self-center"
+              type="submit"
+              disabled={isSubmitting}>
+              <span class="relative">Delete</span>
+            </button>
+            <button
+              class="btn-default overflow-hidden relative w-auto bg-red-50 text-gray-900 py-4 px-4 rounded-xl font-bold uppercase transition-all duration-100 -- hover:shadow-md border border-red-100 hover:bg-gradient-to-t hover:from-red-100 before:to-red-50 hover:-translate-y-[3px] self-center"
+              type="submit"
+              disabled={isSubmitting}>
+              <span class="relative">Delete</span>
+            </button>
+            <button
+              class="btn-default overflow-hidden relative w-auto bg-green-50 text-gray-900 py-4 px-4 rounded-xl font-bold uppercase transition-all duration-100 -- hover:shadow-md border border-green-100 hover:bg-gradient-to-t hover:from-green-100 before:to-green-50 hover:-translate-y-[3px] self-center"
+              type="submit"
+              disabled={isSubmitting}>
+              <span class="relative">Save</span>
             </button>
           </form>
         )}
